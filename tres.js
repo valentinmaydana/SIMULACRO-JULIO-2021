@@ -16,5 +16,71 @@ e) El promedio de edad de los hombres que se aplicaron la vacuna SputnikV y no p
 
 function mostrar()
 {
-	alert("tres");
+	var seguir;
+	seguir=true;
+	var nombreIngresado;
+	var edadIngresada;
+	var generoIngresado;
+	var vacunaIngresada;
+	var temperaturaIngresada;
+	var BanderaTemperatura;
+	var mayorTemperatura;
+	var acumuladorSputnik;
+	acumuladorSputnik=0;
+	var acumuladorAstraZeneca;
+	acumuladorAstraZeneca=0;
+	var acumuladorOtra;
+	acumuladorOtra=0;
+
+	nombreIngresado=prompt("Ingrese su nombre");
+	edadIngresada=prompt("Ingrese su edad: ");
+	edadIngresada=parseInt(edadIngresada);
+
+	while(seguir==true)
+	{
+		generoIngresado=prompt("Ingrese su genero: F/M/NB");
+		while(generoIngresado!="F"& generoIngresado!="M"& generoIngresado!="NB")
+		{
+			generoIngresado=prompt("Error, vuelva a ingresar su genero: ");
+		}
+
+		vacunaIngresada=prompt("Ingrese la vacuna aplicada: SputnikV/AstraZeneca/Otra");
+		while(vacunaIngresada!="SputnikV"& vacunaIngresada!="AstraZeneca"&vacunaIngresada!="Otra")
+		{
+			vacunaIngresada=prompt("Error, ingrese una vacuna valida.")
+		}
+
+		temperaturaIngresada=prompt("Ingrese la temperatura corporal durante la primer noche:")
+		temperaturaIngresada=parseInt(temperaturaIngresada);
+		while(temperaturaIngresada<35 || temperaturaIngresada>40)
+		{
+			temperaturaIngresada=prompt("Error, ingrese una temperatura valida");
+			temperaturaIngresada=parseInt(temperaturaIngresada);
+		}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		seguir=confirm("Desea seguir ingresando datos? ")
+	}
+
+
+
+
+
+
+
+
+
 }
